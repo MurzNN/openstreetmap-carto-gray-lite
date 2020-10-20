@@ -66,7 +66,7 @@ no official postal addresses) */
   [zoom >= 17] {
     text-name: "[name]";
     text-face-name: @book-fonts;
-    text-fill: #444;
+    text-fill: @gray-lite_text-1;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-size: 11;

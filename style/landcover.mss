@@ -931,7 +931,7 @@
     text-name: "[name]";
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
-    text-fill: #999;
+    text-fill: @gray-lite_text-1;
     text-size: 10;
     text-face-name: @book-fonts;
     text-placement: line;

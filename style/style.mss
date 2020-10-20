@@ -5,12 +5,12 @@
 @gray-lite_gray-2: #E8EDEB;
 @gray-lite_gray-3: #D9D9D9;
 
-@gray-lite_text-1: #8C8C8C;
 
 @gray-lite_dark-1: #cad2d3;
 @gray-lite_dark-2: #B5BEBF;
 
-@gray-lite_text-2: #93A1A2;
+@gray-lite_text-1: #93A1A2;
+@gray-lite_text-2: #8C8C8C;
 
 /* categories */
 

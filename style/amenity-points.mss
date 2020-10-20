@@ -1837,7 +1837,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: darken(@landform-color, 30%);
+    text-fill: @gray-lite_text-1;
     [feature = 'natural_volcano'] { text-fill: @gray-lite_gray-3; }
     text-dy: 7;
     [feature = 'tourism_viewpoint'] { text-dy: 11; }
@@ -1863,7 +1863,7 @@
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
-      text-fill: darken(black, 30%);
+      text-fill: @gray-lite_text-1;
       [information = 'office'] { text-fill: @amenity-brown; }
       text-face-name: @standard-font;
       text-halo-radius: @standard-halo-radius;
