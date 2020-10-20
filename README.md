@@ -1,6 +1,6 @@
 # OpenStreetMap Carto Gray Lite
 
-This is forked OpenStreetMap Carto style with applied desaturated gray colors, for lite perception.
+This is forked [OpenStreetMap Carto style](https://github.com/gravitystorm/openstreetmap-carto) with applied desaturated gray colors, for lite perception.
 
 ![screenshot](https://raw.github.com/MurzNN/openstreetmap-carto-gray-lite/master/preview.png)
 
@@ -80,6 +80,7 @@ that need some cartographic judgement.
 There are many open-source stylesheets written for creating OpenStreetMap-based
 maps using Mapnik, many based on this project. Some alternatives are:
 
+* [OpenStreetMap Carto](https://github.com/gravitystorm/openstreetmap-carto)
 * [OSM-Bright](https://github.com/mapbox/osm-bright)
 * [XML-based stylesheets](https://trac.openstreetmap.org/browser/subversion/applications/rendering/mapnik)
 * [osmfr-cartocss](https://github.com/cquest/osmfr-cartocss)
