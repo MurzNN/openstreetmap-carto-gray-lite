@@ -28,7 +28,11 @@
       [way_pixels >= 64] { polygon-gamma: 0.6; }
     }
     [int_intermittent = 'yes'] {
-      polygon-pattern-file: url('symbols/intermittent_water.png');
+      polygon-fill: @gray-lite_dark-2;
+      polygon-pattern-file: url('symbols/patternfills/horizontal-stripe-4.svg');
+      polygon-pattern-transform: scale(0.4);
+      polygon-pattern-comp-op: lighten;
+      polygon-pattern-opacity: 0.2;
       [way_pixels >= 4] { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.6; }
     }

@@ -11,7 +11,7 @@
       dash/line-width: 3;
       dash/line-join: round;
       dash/line-cap: round;
-      dash/line-color: black;
+      dash/line-color: @gray-lite_dark-3;
       dash/line-dasharray: 0.4,13;
       dash/line-clip: false;
     }
@@ -22,11 +22,11 @@
       line/line-width: 1;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #808080;
+      line/line-color: @gray-lite_dark-2;
 
       dash/line-width: 3.5;
       dash/line-join: round;
-      dash/line-color: #707070;
+      dash/line-color: @gray-lite_dark-2;
       dash/line-dasharray: 6,25;
       dash/line-clip: false;
     }
@@ -43,11 +43,11 @@
       line/line-width: 1;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #808080;
+      line/line-color: @gray-lite_dark-2;
 
       dash/line-width: 4;
       dash/line-join: round;
-      dash/line-color: black;
+      dash/line-color: @gray-lite_dark-3;
       dash/line-dasharray: 1,30;
       dash/line-clip: false;
     }
@@ -58,11 +58,11 @@
       line/line-width: 0.7;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #999999;
+      line/line-color: @gray-lite_dark-2;
 
       dash/line-width: 2;
       dash/line-join: round;
-      dash/line-color: #999999;
+      dash/line-color: @gray-lite_dark-2;
       dash/line-dasharray: 4,6;
 
       [zoom >= 16] {
@@ -77,11 +77,11 @@
     [zoom >= 14] {
       line/line-width: .7;
       line/line-join: round;
-      line/line-color: #909090;
+      line/line-color: @gray-lite_dark-2;
       line/line-dasharray: 0,.7,14,.7;
       dash/line-width: 2;
       dash/line-join: round;
-      dash/line-color: #909090;
+      dash/line-color: @gray-lite_dark-2;
       dash/line-dasharray: 0,.7,.7,12.6,.7,.7;
       [zoom >= 15] {
         line/line-width: 1;
