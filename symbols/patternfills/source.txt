@@ -1,0 +1,1 @@
+PatternFills SVG files are generated via https://github.com/iros/patternfills script.
