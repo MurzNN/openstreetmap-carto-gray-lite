@@ -1,11 +1,11 @@
-@building-fill: #d9d0c9;  // Lch(84, 5, 68)
-@building-line: darken(@building-fill, 15%);  // Lch(70, 9, 66)
-@building-low-zoom: darken(@building-fill, 4%);
+@building-fill: @gray-lite_buildings-fill;  // Lch(84, 5, 68)
+@building-line: @gray-lite_buildings-stroke;  // Lch(70, 9, 66)
+@building-low-zoom: @gray-lite_buildings-fill;
 
-@building-major-fill: darken(@building-fill, 10%);  // Lch(75, 8, 67)
-@building-major-line: darken(@building-major-fill, 15%);  // Lch(61, 13, 65)
-@building-major-z15: darken(@building-major-fill, 5%);  // Lch(70, 9, 66)
-@building-major-z14: darken(@building-major-fill, 10%);  // Lch(66, 11, 65)
+@building-major-fill: @gray-lite_buildings-fill;  // Lch(75, 8, 67)
+@building-major-line: @gray-lite_buildings-stroke;  // Lch(61, 13, 65)
+@building-major-z15: @gray-lite_buildings-fill;  // Lch(70, 9, 66)
+@building-major-z14: @gray-lite_buildings-fill;  // Lch(66, 11, 65)
 
 @entrance-permissive: darken(@building-line, 15%);
 @entrance-normal: @building-line;
