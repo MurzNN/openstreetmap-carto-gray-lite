@@ -7,10 +7,15 @@
 @gray-lite_gray-3: #e8e8e8;
 @gray-lite_gray-4: #d9d9d9;
 
-@gray-lite_dark-1: #cad2d3;
-@gray-lite_dark-2: #b5bebf;
+@gray-lite_dark-1: #cacaca;
+@gray-lite_dark-2: #b5b5b5;
 @gray-lite_dark-3: #aaaaaa;
 @gray-lite_dark-4: #a0a0a0;
+
+@gray-lite_water-1: #d8e1e2;
+@gray-lite_water-2: #c8d2d3;
+@gray-lite_water-3: #a9b3b5;
+@gray-lite_water-4: #9ba5a7;
 
 @gray-lite_text-1: #a1a1a1;
 @gray-lite_text-2: #8c8c8c;
@@ -26,9 +31,9 @@
 @gray-lite_buildings-fill: @gray-lite_gray-2;
 @gray-lite_buildings-stroke: @gray-lite_gray-3;
 
-@gray-lite_water-fill: @gray-lite_dark-1;
-@gray-lite_water-stroke: @gray-lite_dark-3;
-@gray-lite_water-text: @gray-lite_text-3;
+@gray-lite_water-fill: @gray-lite_water-2;
+@gray-lite_water-stroke: @gray-lite_water-3;
+@gray-lite_water-text: @gray-lite_water-4;
 
 @gray-lite_water-line: @gray-lite_water-stroke;
 
