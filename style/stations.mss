@@ -1,4 +1,4 @@
-@station-color: @gray-lite_dark-2;
+@station-color: @gray-lite_dark-3;
 @station-text: @gray-lite_text-2;
 
 #stations {

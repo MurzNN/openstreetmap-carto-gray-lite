@@ -1,61 +1,61 @@
 // --- Parks, woods, other green things ---
 
-@grass: @gray-lite_gray-3;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
-@scrub: @gray-lite_gray-3;        // Lch(84,24,122)
-@forest: @gray-lite_gray-3;       // Lch(80,30,135)
+@grass: @gray-lite_gray-4;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
+@scrub: @gray-lite_gray-4;        // Lch(84,24,122)
+@forest: @gray-lite_gray-4;       // Lch(80,30,135)
 @forest-text: @gray-lite_text-1;  // Lch(40,30,135)
-@park: @gray-lite_gray-3;         // Lch(94,30,145)
-@allotments: @gray-lite_gray-3;   // Lch(87,20,135)
-@orchard: @gray-lite_gray-3; // also vineyard, plant_nursery
+@park: @gray-lite_gray-4;         // Lch(94,30,145)
+@allotments: @gray-lite_gray-4;   // Lch(87,20,135)
+@orchard: @gray-lite_gray-4; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
 // --- "Base" landuses ---
 
-@built-up-lowzoom: @gray-lite_gray-2;
-@built-up-z12: @gray-lite_gray-2;
-@residential: @gray-lite_gray-2;      // Lch(89,0,0)
-@residential-line: @gray-lite_gray-3; // Lch(75,0,0)
-@retail: @gray-lite_gray-2;           // Lch(89,16,30)
-@retail-line: @gray-lite_gray-3;      // Lch(70,25,30)
-@commercial: @gray-lite_gray-2;       // Lch(89,8.5,25)
-@commercial-line: @gray-lite_gray-3;  // Lch(75,12,25)
-@industrial: @gray-lite_gray-2;       // Lch(89,9,330) (Also used for railway, wastewater_plant)
-@industrial-line: @gray-lite_gray-3;  // Lch(75,11,330) (Also used for railway-line, wastewater_plant-line)
-@farmland: @gray-lite_gray-2;         // Lch(94,14,112)
-@farmland-line: @gray-lite_gray-3;    // Lch(80,14,112)
-@farmyard: @gray-lite_gray-2;         // Lch(89,20,80)
-@farmyard-line: @gray-lite_gray-3;    // Lch(75,25,80)
+@built-up-lowzoom: @gray-lite_gray-3;
+@built-up-z12: @gray-lite_gray-3;
+@residential: @gray-lite_gray-3;      // Lch(89,0,0)
+@residential-line: @gray-lite_gray-4; // Lch(75,0,0)
+@retail: @gray-lite_gray-3;           // Lch(89,16,30)
+@retail-line: @gray-lite_gray-4;      // Lch(70,25,30)
+@commercial: @gray-lite_gray-3;       // Lch(89,8.5,25)
+@commercial-line: @gray-lite_gray-4;  // Lch(75,12,25)
+@industrial: @gray-lite_gray-3;       // Lch(89,9,330) (Also used for railway, wastewater_plant)
+@industrial-line: @gray-lite_gray-4;  // Lch(75,11,330) (Also used for railway-line, wastewater_plant-line)
+@farmland: @gray-lite_gray-3;         // Lch(94,14,112)
+@farmland-line: @gray-lite_gray-4;    // Lch(80,14,112)
+@farmyard: @gray-lite_gray-3;         // Lch(89,20,80)
+@farmyard-line: @gray-lite_gray-4;    // Lch(75,25,80)
 
 // --- Transport ----
 
-@transportation-area: @gray-lite_gray-3;
-@apron: @gray-lite_gray-3;
-@garages: @gray-lite_gray-3;
-@parking: @gray-lite_gray-2;
-@parking-outline: @gray-lite_gray-3;
+@transportation-area: @gray-lite_gray-4;
+@apron: @gray-lite_gray-4;
+@garages: @gray-lite_gray-4;
+@parking: @gray-lite_gray-3;
+@parking-outline: @gray-lite_gray-4;
 @railway: @industrial;
 @railway-line: @industrial-line;
-@rest_area: @gray-lite_gray-3; // also services
+@rest_area: @gray-lite_gray-4; // also services
 
 // --- Other ----
 
 @bare_ground: @gray-lite_gray-1;
-@campsite: @gray-lite_gray-3; // also caravan_site, picnic_site
-@cemetery: @gray-lite_gray-3; // also grave_yard
-@construction: @gray-lite_gray-3; // also brownfield
-@heath: @gray-lite_gray-3;
-@mud: @gray-lite_gray-3; // produces #e6dcd1 over @land
-@place_of_worship: @gray-lite_gray-2; // also landuse_religious
-@place_of_worship_outline: @gray-lite_gray-3;
-@leisure: @gray-lite_gray-2;
-@power: @gray-lite_gray-3;
-@power-line: @gray-lite_gray-3;
-@sand: @gray-lite_gray-2;
-@societal_amenities: @gray-lite_gray-3;   // Lch(99,13,109)
-@tourism: @gray-lite_gray-3;
-@quarry: @gray-lite_gray-3;
-@military: @gray-lite_gray-3;
-@beach: @gray-lite_gray-2;
+@campsite: @gray-lite_gray-4; // also caravan_site, picnic_site
+@cemetery: @gray-lite_gray-4; // also grave_yard
+@construction: @gray-lite_gray-4; // also brownfield
+@heath: @gray-lite_gray-4;
+@mud: @gray-lite_gray-4; // produces #e6dcd1 over @land
+@place_of_worship: @gray-lite_gray-3; // also landuse_religious
+@place_of_worship_outline: @gray-lite_gray-4;
+@leisure: @gray-lite_gray-3;
+@power: @gray-lite_gray-4;
+@power-line: @gray-lite_gray-4;
+@sand: @gray-lite_gray-3;
+@societal_amenities: @gray-lite_gray-4;   // Lch(99,13,109)
+@tourism: @gray-lite_gray-4;
+@quarry: @gray-lite_gray-4;
+@military: @gray-lite_gray-4;
+@beach: @gray-lite_gray-3;
 @wastewater_plant: @industrial;
 @wastewater_plant-line: @industrial-line;
 @water_works: @industrial;
@@ -63,10 +63,10 @@
 
 // --- Sports ---
 
-@pitch: @gray-lite_gray-3;           // Lch(85,22,168) also track
+@pitch: @gray-lite_gray-4;           // Lch(85,22,168) also track
 @track: @pitch;
 @stadium: @leisure; // also sports_centre
-@golf_course: @gray-lite_gray-2;
+@golf_course: @gray-lite_gray-3;
 
 #landcover-low-zoom[zoom < 10],
 #landcover[zoom >= 10] {
@@ -850,7 +850,7 @@
 #barriers {
   [zoom >= 16] {
     line-width: 0.4;
-    line-color: @gray-lite_dark-2;
+    line-color: @gray-lite_dark-3;
   }
   [feature = 'barrier_hedge'][zoom >= 16] {
     line-width: 1.5;

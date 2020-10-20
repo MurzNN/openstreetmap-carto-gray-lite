@@ -1,30 +1,34 @@
-/* Gray-Light base colors */
+/* Gray-Lite base colors */
 
-@gray-lite_light: #fff;
-@gray-lite_gray-1: #F6F6F4;
-@gray-lite_gray-2: #E8EDEB;
-@gray-lite_gray-3: #D9D9D9;
+@gray-lite_light: #ffffff;
 
+@gray-lite_gray-1: #f6f6f6;
+@gray-lite_gray-2: #f0f0f0;
+@gray-lite_gray-3: #e8e8e8;
+@gray-lite_gray-4: #d9d9d9;
 
 @gray-lite_dark-1: #cad2d3;
-@gray-lite_dark-2: #B5BEBF;
+@gray-lite_dark-2: #b5bebf;
+@gray-lite_dark-3: #aaaaaa;
+@gray-lite_dark-4: #a0a0a0;
 
-@gray-lite_text-1: #93A1A2;
-@gray-lite_text-2: #8C8C8C;
+@gray-lite_text-1: #a1a1a1;
+@gray-lite_text-2: #8c8c8c;
+@gray-lite_text-3: #838383;
 
 /* categories */
 
 @gray-lite_land-fill: @gray-lite_gray-1;
 
 @gray-lite_roads-fill: @gray-lite_light;
-@gray-lite_roads-stroke: @gray-lite_gray-2;
+@gray-lite_roads-stroke: @gray-lite_gray-4;
 
-@gray-lite_buildings-fill: @gray-lite_gray-1;
+@gray-lite_buildings-fill: @gray-lite_gray-2;
 @gray-lite_buildings-stroke: @gray-lite_gray-3;
 
 @gray-lite_water-fill: @gray-lite_dark-1;
-@gray-lite_water-stroke: @gray-lite_dark-2;
-@gray-lite_water-text: @gray-lite_text-2;
+@gray-lite_water-stroke: @gray-lite_dark-3;
+@gray-lite_water-text: @gray-lite_text-3;
 
 @gray-lite_water-line: @gray-lite_water-stroke;
 
