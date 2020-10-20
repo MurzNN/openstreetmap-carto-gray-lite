@@ -1,6 +1,8 @@
-# OpenStreetMap Carto
+# OpenStreetMap Carto Gray Lite
 
-![screenshot](https://raw.github.com/gravitystorm/openstreetmap-carto/master/preview.png)
+This is forked OpenStreetMap Carto style with applied desaturated gray colors, for lite perception.
+
+![screenshot](https://raw.github.com/MurzNN/openstreetmap-carto-gray-lite/master/preview.png)
 
 These are the CartoCSS map stylesheets for the Standard map layer on [OpenStreetMap.org](https://www.openstreetmap.org).
 
