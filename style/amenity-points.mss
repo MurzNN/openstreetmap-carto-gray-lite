@@ -3068,7 +3068,7 @@
   ::canopy {
     opacity: 0.3;
     [natural = 'tree_row'] {
-      line-color: green;
+      line-color: @gray-lite_gray-4;
       line-cap: round;
       line-width: 2.5;
       [zoom >= 17] {
@@ -3086,7 +3086,7 @@
     }
     [natural = 'tree'] {
       [zoom >= 18] {
-        marker-fill: green;
+        marker-fill: @gray-lite_gray-4;
         marker-allow-overlap: true;
         marker-line-width: 0;
         marker-ignore-placement: true;
