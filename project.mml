@@ -50,35 +50,35 @@ Stylesheet:
   - style/admin.mss
   - style/addressing.mss
 Layer:
-  - id: landcover-low-zoom
-    geometry: polygon
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, way_pixels,
-            COALESCE(wetland, landuse, "natural") AS feature
-          FROM (SELECT
-              way,
-              ('landuse_' || (CASE WHEN landuse IN ('forest', 'farmland', 'residential', 'commercial', 'retail', 'industrial',
-                                                    'meadow', 'grass', 'village_green', 'vineyard', 'orchard') THEN landuse END)) AS landuse,
-              ('natural_' || (CASE WHEN "natural" IN ('wood', 'sand', 'scree', 'shingle', 'bare_rock', 'heath', 'grassland', 'scrub') THEN "natural" END)) AS "natural",
-              ('wetland_' || (CASE WHEN "natural" IN ('wetland', 'mud') THEN (CASE WHEN "natural" IN ('mud') THEN "natural" ELSE tags->'wetland' END) END)) AS wetland,
-              way_area/NULLIF(POW(!scale_denominator!*0.001*0.28,2),0) AS way_pixels,
-              way_area
-            FROM planet_osm_polygon
-            WHERE (landuse IN ('forest', 'farmland', 'residential', 'commercial', 'retail', 'industrial', 'meadow', 'grass', 'village_green', 'vineyard', 'orchard')
-              OR "natural" IN ('wood', 'wetland', 'mud', 'sand', 'scree', 'shingle', 'bare_rock', 'heath', 'grassland', 'scrub'))
-              AND way_area > 0.01*!pixel_width!::real*!pixel_height!::real
-              AND building IS NULL
-          ) AS features
-          ORDER BY way_area DESC, feature
-        ) AS landcover_low_zoom
-    properties:
-      cache-features: true
-      minzoom: 5
-      maxzoom: 9
+  # - id: landcover-low-zoom
+  #   geometry: polygon
+  #   <<: *extents
+  #   Datasource:
+  #     <<: *osm2pgsql
+  #     table: |-
+  #       (SELECT
+  #           way, way_pixels,
+  #           COALESCE(wetland, landuse, "natural") AS feature
+  #         FROM (SELECT
+  #             way,
+  #             ('landuse_' || (CASE WHEN landuse IN ('forest', 'farmland', 'residential', 'commercial', 'retail', 'industrial',
+  #                                                   'meadow', 'grass', 'village_green', 'vineyard', 'orchard') THEN landuse END)) AS landuse,
+  #             ('natural_' || (CASE WHEN "natural" IN ('wood', 'sand', 'scree', 'shingle', 'bare_rock', 'heath', 'grassland', 'scrub') THEN "natural" END)) AS "natural",
+  #             ('wetland_' || (CASE WHEN "natural" IN ('wetland', 'mud') THEN (CASE WHEN "natural" IN ('mud') THEN "natural" ELSE tags->'wetland' END) END)) AS wetland,
+  #             way_area/NULLIF(POW(!scale_denominator!*0.001*0.28,2),0) AS way_pixels,
+  #             way_area
+  #           FROM planet_osm_polygon
+  #           WHERE (landuse IN ('forest', 'farmland', 'residential', 'commercial', 'retail', 'industrial', 'meadow', 'grass', 'village_green', 'vineyard', 'orchard')
+  #             OR "natural" IN ('wood', 'wetland', 'mud', 'sand', 'scree', 'shingle', 'bare_rock', 'heath', 'grassland', 'scrub'))
+  #             AND way_area > 0.01*!pixel_width!::real*!pixel_height!::real
+  #             AND building IS NULL
+  #         ) AS features
+  #         ORDER BY way_area DESC, feature
+  #       ) AS landcover_low_zoom
+  #   properties:
+  #     cache-features: true
+  #     minzoom: 5
+  #     maxzoom: 9
   # - id: landcover
   #   geometry: polygon
   #   <<: *extents
@@ -275,36 +275,36 @@ Layer:
         ) AS ocean
     properties:
       minzoom: 10
-  - id: landcover-area-symbols
-    geometry: polygon
-    <<: *extents
-    Datasource:
-      <<: *osm2pgsql
-      table: |-
-        (SELECT
-            way, surface,
-            COALESCE(CASE WHEN landuse = 'forest' THEN 'wood' END, "natural") AS "natural",
-            CASE WHEN "natural" = 'mud'
-                THEN "natural"
-                ELSE CASE WHEN ("natural" = 'wetland' AND NOT tags ? 'wetland')
-                  THEN 'wetland'
-                  ELSE CASE WHEN ("natural" = 'wetland')
-                    THEN tags->'wetland'
-                    END
-                END
-              END AS int_wetland,
-            landuse,
-            tags->'leaf_type' AS leaf_type,
-            way_area/NULLIF(POW(!scale_denominator!*0.001*0.28,2),0) AS way_pixels
-          FROM planet_osm_polygon
-          WHERE ("natural" IN ('mud', 'wetland', 'wood', 'beach', 'shoal', 'reef', 'scrub') OR landuse IN ('forest', 'salt_pond'))
-            AND building IS NULL
-            AND way_area > 1*!pixel_width!::real*!pixel_height!::real
-          ORDER BY COALESCE(layer,0), way_area DESC
-        ) AS landcover_area_symbols
-    properties:
-      cache-features: true
-      minzoom: 9
+  # - id: landcover-area-symbols
+  #   geometry: polygon
+  #   <<: *extents
+  #   Datasource:
+  #     <<: *osm2pgsql
+  #     table: |-
+  #       (SELECT
+  #           way, surface,
+  #           COALESCE(CASE WHEN landuse = 'forest' THEN 'wood' END, "natural") AS "natural",
+  #           CASE WHEN "natural" = 'mud'
+  #               THEN "natural"
+  #               ELSE CASE WHEN ("natural" = 'wetland' AND NOT tags ? 'wetland')
+  #                 THEN 'wetland'
+  #                 ELSE CASE WHEN ("natural" = 'wetland')
+  #                   THEN tags->'wetland'
+  #                   END
+  #               END
+  #             END AS int_wetland,
+  #           landuse,
+  #           tags->'leaf_type' AS leaf_type,
+  #           way_area/NULLIF(POW(!scale_denominator!*0.001*0.28,2),0) AS way_pixels
+  #         FROM planet_osm_polygon
+  #         WHERE ("natural" IN ('mud', 'wetland', 'wood', 'beach', 'shoal', 'reef', 'scrub') OR landuse IN ('forest', 'salt_pond'))
+  #           AND building IS NULL
+  #           AND way_area > 1*!pixel_width!::real*!pixel_height!::real
+  #         ORDER BY COALESCE(layer,0), way_area DESC
+  #       ) AS landcover_area_symbols
+  #   properties:
+  #     cache-features: true
+  #     minzoom: 9
   - id: icesheet-outlines
     geometry: linestring
     <<: *extents
