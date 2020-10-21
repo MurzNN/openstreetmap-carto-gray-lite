@@ -12,10 +12,10 @@
 @gray-lite_dark-3: #aaaaaa;
 @gray-lite_dark-4: #a0a0a0;
 
-@gray-lite_water-1: #d8e1e2;
-@gray-lite_water-2: #c8d2d3;
-@gray-lite_water-3: #a9b3b5;
-@gray-lite_water-4: #9ba5a7;
+@gray-lite_water-1: #e1e9eb;
+@gray-lite_water-2: #d4dcdd;
+@gray-lite_water-3: #CAD2D3;
+@gray-lite_water-4: #bdc6c7;
 
 @gray-lite_text-1: #a1a1a1;
 @gray-lite_text-2: #8c8c8c;
